@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{801A0F89-D5F6-49A6-BCEA-6624388C98A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HomingInWebservice.ServiceInterface</RootNamespace>
+    <AssemblyName>HomingInWebservice.ServiceInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mandrill, Version=2.4.173.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Mandrill.2.4.173\lib\net45\Mandrill.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Braintree-2.65.0, Version=2.65.0.0, Culture=neutral, PublicKeyToken=31b586f34d3e96c7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Braintree.2.65.0\lib\Braintree-2.65.0.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="PasswordHashTool, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\PasswordHashTool.1.0.0\lib\PasswordHashTool.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.S3">
+      <HintPath>..\..\packages\AWSSDK.S3.3.1.3.13\lib\net45\AWSSDK.S3.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core">
+      <HintPath>..\..\packages\AWSSDK.Core.3.1.5.0\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\..\packages\ServiceStack.Interfaces.4.0.54\lib\portable-wp80+sl5+net40+win8+monotouch+monoandroid+xamarin.ios10\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\..\packages\ServiceStack.Text.4.0.54\lib\net40\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\..\packages\ServiceStack.Common.4.0.54\lib\net40\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Client">
+      <HintPath>..\..\packages\ServiceStack.Client.4.0.54\lib\net40\ServiceStack.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack">
+      <HintPath>..\..\packages\ServiceStack.4.0.54\lib\net40\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\..\packages\ServiceStack.Redis.4.0.54\lib\net40\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\..\packages\ServiceStack.OrmLite.4.0.54\lib\net45\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Server">
+      <HintPath>..\..\packages\ServiceStack.Server.4.0.54\lib\net45\ServiceStack.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="UrbanAirSharp">
+      <HintPath>..\..\packages\UrbanAirSharp.1.2.0.0\lib\net45\UrbanAirSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PurchaseService.cs" />
+    <Compile Include="EstimateService.cs" />
+    <Compile Include="HomingInService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AuthenticationService.cs" />
+    <Compile Include="Converters\PictureDataConverter.cs" />
+    <Compile Include="ConversationService .cs" />
+    <Compile Include="UserService.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HomingInWebservice.ServiceModel\HomingInWebservice.ServiceModel.csproj">
+      <Project>{53E82AC1-DD1D-4C66-B55F-F9F4ACFB2F40}</Project>
+      <Name>HomingInWebservice.ServiceModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+</Project>
